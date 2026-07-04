@@ -32,9 +32,7 @@ order: 4
 
 ### About
 
-<div style="display: flex; gap: 5px; flex-wrap: wrap;">
-  <a href="https://mangsgi.github.io"><img src="https://img.shields.io/badge/-Tech%20blog-black?style=flat-square&logo=github" alt="Tech Blog Badge"></a>
-  <a href="https://velog.io/@mangsgi"><img src="https://img.shields.io/badge/-Velog-20C997?style=flat-square&logo=velog&logoColor=white" alt="Velog Badge"></a>
-  <a href="https://www.linkedin.com/in/%EB%AA%85%EC%84%9D-%EA%B9%80-4150473a2/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="Linkedin Badge"></a>
-  <a href="mailto:ms010901@gmail.com"><img src="https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white" alt="Gmail Badge"></a>
-</div>
+[![Tech Blog Badge](http://img.shields.io/badge/-Tech%20blog-black?style=flat-square&logo=github&link=https://mangsgi.github.io)](https://mangsgi.github.io) 
+[![Velog Badge](https://img.shields.io/badge/-Velog-20C997?style=flat-square&logo=velog&logoColor=white&link=https://velog.io/@mangsgi)](https://velog.io/@mangsgi)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/%EB%AA%85%EC%84%9D-%EA%B9%80-4150473a2/)](https://www.linkedin.com/in/%EB%AA%85%EC%84%9D-%EA%B9%80-4150473a2/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ms010901@gmail.com)](mailto:ms010901@gmail.com)
