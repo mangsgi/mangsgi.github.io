@@ -1,39 +1,74 @@
-# Chirpy Starter
+# [mangsgi.github.io](https://mangsgi.github.io/)
+- My Github Blog
+- Jul, 2026 ~
+- I document my journey of exploring low-level computer programming and building robust, scalable systems.
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+## Setup
+- Ruby Version: `3.4.10`
+- Bundler Version: `2.6.9`
 
-A minimal, ready-to-use template for creating a blog with the [**Chirpy**][chirpy] Jekyll theme. Get up and running in minutes with all critical files pre-configured.
-
-## Why This Starter Exists
-
-When installing Chirpy through [RubyGems.org][gem], Jekyll can only read a subset of theme files (`_data`, `_layouts`, `_includes`, `_sass`, `assets`) and limited `_config.yml` options from the gem. As a result, users cannot enjoy the full out-of-the-box experience that Chirpy offers.
-
-To unlock all features, the following files must be present in your Jekyll site:
-
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+## Bundler | Gem List
+- `bundle list`
 ```
-
-This starter bundles those files from the latest **Chirpy** release along with a [CD][CD] workflow, so you can start writing immediately.
-
-## Usage
-
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
-
-## Contributing
-
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
-
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+Gems included by the bundle:
+  * Ascii85 (2.0.1)
+  * addressable (2.9.0)
+  * afm (1.0.0)
+  * async (2.42.0)
+  * base64 (0.3.0)
+  * benchmark (0.5.0)
+  * bigdecimal (3.3.1)
+  * colorator (1.1.0)
+  * concurrent-ruby (1.3.7)
+  * console (1.36.0)
+  * csv (3.3.5)
+  * em-websocket (0.5.3)
+  * ethon (0.18.0)
+  * eventmachine (1.2.7)
+  * fiber-annotation (0.2.0)
+  * fiber-local (1.1.0)
+  * fiber-storage (1.0.1)
+  * forwardable-extended (2.6.0)
+  * google-protobuf (4.35.1)
+  * hashery (2.1.2)
+  * html-proofer (5.2.1)
+  * i18n (1.15.2)
+  * io-event (1.19.1)
+  * jekyll (4.4.1)
+  * jekyll-archives (2.3.0)
+  * jekyll-include-cache (0.2.1)
+  * jekyll-paginate (1.1.0)
+  * jekyll-sass-converter (3.1.0)
+  * jekyll-seo-tag (2.9.0)
+  * jekyll-sitemap (1.4.0)
+  * jekyll-theme-chirpy (7.6.0)
+  * jekyll-watch (2.2.1)
+  * json (2.20.0)
+  * kramdown (2.5.2)
+  * kramdown-parser-gfm (1.1.0)
+  * liquid (4.0.4)
+  * listen (3.10.0)
+  * logger (1.7.0)
+  * mercenary (0.4.0)
+  * metrics (0.15.0)
+  * pathutil (0.16.2)
+  * pdf-reader (2.15.1)
+  * public_suffix (7.0.5)
+  * racc (1.8.1)
+  * rainbow (3.1.1)
+  * rake (13.4.2)
+  * rb-fsevent (0.11.2)
+  * rb-inotify (0.11.1)
+  * rexml (3.4.4)
+  * rouge (4.7.0)
+  * ruby-rc4 (0.1.5)
+  * safe_yaml (1.0.5)
+  * terminal-table (3.0.2)
+  * traces (0.18.2)
+  * ttfunk (1.8.0)
+  * typhoeus (1.6.0)
+  * unicode-display_width (2.6.0)
+  * webrick (1.9.2)
+  * yell (2.2.2)
+  * zeitwerk (2.8.2)
+```

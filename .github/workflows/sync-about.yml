@@ -1,0 +1,52 @@
+name: Sync README to About
+
+on:
+  repository_dispatch:
+    types: [sync-readme]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout blog repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }} # You need to create a Personal Access Token and add it to secrets
+
+      - name: Download README from mangsgi repo
+        run: |
+          curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3.raw" \
+               -o downloaded_readme.md \
+               -L https://api.github.com/repos/mangsgi/mangsgi/contents/README.md
+
+      - name: Update about.md
+        run: |
+          # Create the frontmatter
+          echo "---" > _tabs/about.md
+          echo "# the default layout is 'page'" >> _tabs/about.md
+          echo "icon: fas fa-info-circle" >> _tabs/about.md
+          echo "order: 4" >> _tabs/about.md
+          echo "---" >> _tabs/about.md
+          echo "" >> _tabs/about.md
+          
+          # Append the downloaded README content
+          cat downloaded_readme.md >> _tabs/about.md
+          
+          # Clean up
+          rm downloaded_readme.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add _tabs/about.md
+          
+          # Only commit if there are changes
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: sync about.md with mangsgi/README.md"
+            git push
+          else
+            echo "No changes to commit"
+          fi
